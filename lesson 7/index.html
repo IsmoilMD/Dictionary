@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .veriphone{
+  border: 3px solid #eee;
+}
+.veriphone.valid{
+  border-color: #00CC00;
+}
+.veriphone.not-valid{
+  border-color: #EE0000;
+}
+.box{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+    </style>
+</head>
+<body>
+<h1>Your Easy Dictionary</h1>
+    <form  id="main-form" ><input class="veriphone"/></form>
+    <p>Definition:</p> 
+    <audio id="play"  controls>
+    Your browser does not support the audio element.
+    </audio>
+ <div class="box"></div>
+ <p>Spelling:</p> 
+ <div class="box1"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
